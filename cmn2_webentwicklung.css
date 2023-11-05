@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+	font-size: 10px;
+	--heading-height: 20em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #101010;  
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: var(--heading-height);
+}
+
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 6em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background: 
+		linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+		url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: .2em solid #fff;
+}
+
+#content {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}
+
+header h1 {
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: .01em;
+	padding: 0 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: hsl(0, 68%, 53%);
+}
+
+.imgHead {
+    padding-top: 10px;
+    float:left;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width:  auto;
+}
+
+section {
+    padding-top: 10px;
+}
+
+div.box-wrapper div.image article {
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.3);
+    width: 50%;
+    padding-left: 2.5%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25); 
+}
+
+div.box-wrapper div.image article h1 {
+    text-decoration: underline;
+}
+
+div.box-wrapper div.image article p {
+    font-size: small;
+    text-decoration: wavy;
+}
+
+div.box-wrapper {
+    padding: 5%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.box-wrapper button {
+    width: 50%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    background-color: transparent;
+    padding-right: 10%;
+}
+
+div.box-wrapper img {
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+    background-color: white;
+}
+  
+div.box-wrapper div.image img:hover{
+    transform: scale(1.2);
+} 
+  
+div.box-wrapper div.image {
+    padding-left: 10%;
+    padding-bottom: 3.5%;
+    margin: 0;
+    width: 50%;
+	height: auto;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+article button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header button {
+    padding-top: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+footer
+{
+    border-radius: 15px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size:small;
+}
+
+footer p{
+    padding-left: 10px;
+    padding-top: 8px;
+}
